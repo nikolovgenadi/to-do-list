@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + TS</title>
+  </head>
+  <body class="body">
+    <main class="wrapper">
+
+      <h1 class="page-title-todolist">Welcome, user</h1>
+
+      <section class="add-todo-wrapper">
+        <div id="add-form">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Add your to do..."
+            id="add-input"
+          />
+          <button type="submit" class="btn btn-primary" id="add-btn">Add</button>
+        </div>
+        <h2 class="list-title">My list</h2>
+      </section>
+
+      <section class="to-do-list-wrapper" id="list-wrapper">
+      </section>
+      <button type="delete" class="btn-primary" id="delete-all">Delete All</button>
+      <script type="module" src="/dist/main.js"></script>
+    </main>
+  </body>
+</html>

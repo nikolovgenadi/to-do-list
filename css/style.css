@@ -1,0 +1,151 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+}
+
+main {
+  background-color: #1a1a1a;
+  display: grid;
+  grid-template-areas:
+  "page-title"
+  "add-todo-wrapper"
+  "to-do-list-wrapper";
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  width: 80%;
+  height: auto;
+  gap: 20px;
+}
+
+.page-title-todolist {
+  color: white;
+  grid-area: page-title;
+  width:100%;
+  font-size: 58px;
+  background-color: #1a1a1a;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.add-todo-wrapper {
+  grid-area: add-todo-wrapper;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.to-do-list-wrapper { 
+  background-color: #1a1a1a;
+  height: auto;
+  min-width: 80%;
+  max-width: 1024px;
+  min-height: 300px;
+  grid-area: to-do-list-wrapper;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+#add-form {
+  width: 100%;
+  display: flex;
+  height: 38px;
+  padding: 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-self: center;
+  margin: 5px;
+}
+
+.form-group {
+  display: flex;
+  height: 38px;
+  width: 95%;
+  padding: 2px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-self: center;
+  margin: 5px;
+}
+
+h2 {
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-primary {
+  text-align: center;
+  width: 30px;
+  background-color: rgb(178, 1, 1);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control {
+  width: 75%;
+  display: flex;
+}
+
+.form-check {
+  display: flex;
+  align-self: center;
+}
+
+/* #delete-btn {
+  width: 30px;
+  display: flex;
+  background-color: r
+  gb(178, 1, 1);
+} */
+#add-btn {
+  width: 50px;
+  text-align: center;
+  background-color: rgb(0, 60, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#delete-all {
+  width: 80px;
+  height: 35px;
+  position:fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 25px;
+  left: 43.5%;
+}
+
+.checked {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-color: black;
+}
